@@ -2,64 +2,31 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sigue estudiando 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Sigue esforzandote bonita 💖</title>
+
+  <!-- Fuente romántica y profesional -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom right, #ffe0ec, #f0f8ff);
-      font-family: 'Open Sans', sans-serif;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100vh;
-    }
 
-    h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 60px;
-      color: #d63384;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 22px;
-      color: #555;
-      margin: 0 40px;
-    }
-
-    .heart {
-      font-size: 50px;
-      color: #ff69b4;
-      animation: heartbeat 1.5s infinite;
-    }
-
-    @keyframes heartbeat {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
-    }
-
-    footer {
-      position: absolute;
-      bottom: 20px;
-      width: 100%;
-      font-size: 16px;
-      color: #777;
-    }
-  </style>
+  <!-- Enlace al CSS externo -->
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <div class="heart">💖</div>
-  <h1>No dejes de soñar</h1>
-  <p>Estudiar no solo cambia tu futuro, cambia tu presente.  
-  A veces cuesta, pero cada esfuerzo te acerca más a la vida que mereces.  
-  Cree en ti, porque lo mejor aún está por venir 🌟</p>
-  <footer>Con cariño, Gabigol-10 💫</footer>
+  <div class="container">
+    <h1>¡Sigue adelante! 💫</h1>
+    <p class="mensaje">
+      Estudiar es el acto más romántico que puedes tener contigo mismo.  
+      No se trata solo de aprobar, se trata de crecer, de soñar, de creer en tu futuro.  
+      Cada página leída, cada esfuerzo vale la pena.  
+      ¡Tú puedes lograr cosas increíbles! 📚❤️
+    </p>
+
+    <button onclick="mostrarFrase()">Motívame ✨</button>
+
+    <p id="fraseExtra" class="oculto"></p>
+  </div>
+
+  <!-- Enlace al JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
