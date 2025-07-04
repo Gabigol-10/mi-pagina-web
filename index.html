@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Sigue esforzandote bonita 💖</title>
-
-  <!-- Fuente romántica y profesional -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
-
-  <!-- Enlace al CSS externo -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorpresa Dulce 🍫</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
   <div class="container">
-    <h1>¡Sigue adelante! 💫</h1>
-    <p class="mensaje">
-      Estudiar es el acto más romántico que puedes tener contigo mismo.  
-      No se trata solo de aprobar, se trata de crecer, de soñar, de creer en tu futuro.  
-      Cada página leída, cada esfuerzo vale la pena.  
-      ¡Tú puedes lograr cosas increíbles! 📚❤️
-    </p>
+    <h1>¡Hola bonita! 💖</h1>
+    <p class="mensaje">Tengo una pequeña sorpresa para ti...</p>
+    
+    <button onclick="mostrarSorpresa()">Ver sorpresa 🎁</button>
 
-    <button onclick="mostrarFrase()">Motívame ✨</button>
+    <div id="sorpresa" class="oculto">
+      <p class="frase">Aquí saldrá tu frase ... 🍫✨</p>
+      <img src="https://www.nestleprofessional-latam.com/sites/default/files/styles/np_product_teaser_2x/public/2023-07/133420-Princesa-30g_0.png?itok=MnBYljnp" alt="Chocolate Princesa" class="imagen-sorpresa">
 
-    <p id="fraseExtra" class="oculto"></p>
+      <div class="respuesta-box">
+        <p>¿Qué opinas de esta sorpresa?</p>
+        <textarea id="respuesta" placeholder="Escribe aquí..." rows="3"></textarea>
+        <button onclick="guardarMensaje()">Enviar 💌</button>
+      </div>
+    </div>
   </div>
 
-  <!-- Enlace al JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

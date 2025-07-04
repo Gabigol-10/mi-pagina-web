@@ -1,38 +1,41 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom right, #ffe0ec, #f0f8ff);
-  font-family: 'Open Sans', sans-serif;
+  background-image: url('https://i.imgur.com/ooD5l0v.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   text-align: center;
 }
 
 .container {
-  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.88);
   padding: 40px;
-  background-color: #ffffffd9;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  max-width: 600px;
+  backdrop-filter: blur(5px);
 }
 
 h1 {
   font-family: 'Great Vibes', cursive;
-  font-size: 60px;
+  font-size: 50px;
   color: #d63384;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .mensaje {
   font-size: 20px;
-  color: #444;
-  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
 }
 
 button {
-  margin-top: 25px;
   padding: 12px 24px;
   font-size: 16px;
   background-color: #d63384;
@@ -40,25 +43,66 @@ button {
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: 0.3s;
 }
 
 button:hover {
   background-color: #c2185b;
 }
 
-#fraseExtra {
-  margin-top: 25px;
+#sorpresa {
+  margin-top: 30px;
+}
+
+.frase {
   font-size: 18px;
-  color: #555;
-  animation: fadeIn 1s ease-in;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.imagen-sorpresa {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .oculto {
   display: none;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+.respuesta-box {
+  margin-top: 25px;
+  background-color: #fff9fb;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.respuesta-box p {
+  font-weight: bold;
+  color: #555;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.respuesta-box button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #d63384;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.respuesta-box button:hover {
+  background-color: #c2185b;
 }
